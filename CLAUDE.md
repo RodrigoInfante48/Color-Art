@@ -124,3 +124,4 @@ Pages debe estar configurado con **Source: GitHub Actions**.
 | 2026-09-24 | Desbloqueo: 3 primeros abiertos, luego secuencial; `unlocked` en la config lo fuerza | Da variedad al inicio sin perder la progresión |
 | 2026-09-24 | Progreso como bitset base64 + `hash` del nivel | ~1,7 KB por nivel de 100×100; si el nivel se regenera distinto, se descarta el progreso parcial sin romper nada |
 | 2026-09-24 | Pinturas famosas (niveles 04–08) con `size: 64`, `colors: 20`, `mergeDistance: 6`, `minRegion: 3` | Comparé 48/12, 56/16, 64/20 y 64-72/24 en un montaje: con `mergeDistance: 10` Venus colapsaba a 6 colores (paleta apagada); 24 colores o 72 celdas casi no suman detalle con fuentes de 120 px y hacen el nivel más tedioso |
+| 2026-09-24 | Pinturas 04–08 con `unlocked: true` | Pedido del dueño: disponibles desde el inicio, sin completar los niveles anteriores |

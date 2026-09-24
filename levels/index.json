@@ -36,7 +36,8 @@
       "height": 64,
       "colors": 20,
       "thumb": "gioconda.png",
-      "hash": "f414f46fb5"
+      "hash": "f414f46fb5",
+      "unlocked": true
     },
     {
       "id": "noche-estrellada",
@@ -45,7 +46,8 @@
       "height": 64,
       "colors": 20,
       "thumb": "noche-estrellada.png",
-      "hash": "93d7089589"
+      "hash": "93d7089589",
+      "unlocked": true
     },
     {
       "id": "nacimiento-de-venus",
@@ -54,7 +56,8 @@
       "height": 64,
       "colors": 20,
       "thumb": "nacimiento-de-venus.png",
-      "hash": "d5ad256bc1"
+      "hash": "d5ad256bc1",
+      "unlocked": true
     },
     {
       "id": "libertad",
@@ -63,7 +66,8 @@
       "height": 64,
       "colors": 20,
       "thumb": "libertad.png",
-      "hash": "dbc934412e"
+      "hash": "dbc934412e",
+      "unlocked": true
     },
     {
       "id": "creacion-de-adan",
@@ -72,7 +76,8 @@
       "height": 64,
       "colors": 18,
       "thumb": "creacion-de-adan.png",
-      "hash": "8e098223ef"
+      "hash": "8e098223ef",
+      "unlocked": true
     }
   ]
 }

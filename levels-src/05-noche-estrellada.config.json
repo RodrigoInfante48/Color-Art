@@ -3,5 +3,6 @@
   "size": 64,
   "colors": 20,
   "mergeDistance": 6,
-  "minRegion": 3
+  "minRegion": 3,
+  "unlocked": true
 }
