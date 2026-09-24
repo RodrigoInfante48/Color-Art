@@ -64,6 +64,9 @@ El progreso se guarda solo en tu navegador (`localStorage`). En modo privado el 
 
    Puedes seguir el avance en la pestaña **Actions** del repo.
 
+**Receta para fotos o pinturas** (como los niveles de cuadros famosos): `{"size": 64, "colors": 20, "mergeDistance": 6}`.
+Con los valores por defecto se pierde mucho detalle en imágenes con degradados.
+
 ¿No te gustó el resultado? Ajusta el `.config.json` (más `colors`, otro `size`, etc.) y vuelve a subirlo.
 También puedes previsualizarlo localmente (ver abajo) antes de subirlo.
 Para **quitar** un nivel, borra su imagen de `levels-src/`: el script elimina los archivos generados.

@@ -60,7 +60,8 @@ Navegación por hash: `#/` = catálogo, `#/nivel/<id>` = partida. El botón atr�
 5. Escribe `levels/<id>.json`, la miniatura `levels/<id>.png` (~160 px) y `levels/index.json`. Borra los archivos huérfanos (solo si no hubo errores). Termina con código 1 si alguna imagen falla.
 
 Config opcional `levels-src/<nombre>.config.json`: `name`, `size`, `width`, `height`, `colors` (2–36), `mergeDistance`, `minRegion`, `unlocked`.
-`tools/make-samples.js` dibuja las 3 imágenes de ejemplo.
+`tools/make-samples.js` dibuja las 3 imágenes de ejemplo (01–03). Los niveles 04–08 son pinturas de dominio público subidas por el dueño (fuentes de 120×120 px).
+**Receta para fotos/pinturas:** `size` 64, `colors` 20, `mergeDistance` 6. Para dibujos planos bastan los valores por defecto.
 
 ### Formato exacto de nivel: `levels/<id>.json`
 ```json
@@ -122,3 +123,4 @@ Pages debe estar configurado con **Source: GitHub Actions**.
 | 2026-09-24 | Sin color elegido o con «modo mover», 1 dedo desplaza | Hay alternativa al pellizco para mover el lienzo |
 | 2026-09-24 | Desbloqueo: 3 primeros abiertos, luego secuencial; `unlocked` en la config lo fuerza | Da variedad al inicio sin perder la progresión |
 | 2026-09-24 | Progreso como bitset base64 + `hash` del nivel | ~1,7 KB por nivel de 100×100; si el nivel se regenera distinto, se descarta el progreso parcial sin romper nada |
+| 2026-09-24 | Pinturas famosas (niveles 04–08) con `size: 64`, `colors: 20`, `mergeDistance: 6`, `minRegion: 3` | Comparé 48/12, 56/16, 64/20 y 64-72/24 en un montaje: con `mergeDistance: 10` Venus colapsaba a 6 colores (paleta apagada); 24 colores o 72 celdas casi no suman detalle con fuentes de 120 px y hacen el nivel más tedioso |

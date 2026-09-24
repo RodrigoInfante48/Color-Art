@@ -28,6 +28,51 @@
       "colors": 9,
       "thumb": "atardecer.png",
       "hash": "a2b5747ca7"
+    },
+    {
+      "id": "gioconda",
+      "name": "La Gioconda",
+      "width": 64,
+      "height": 64,
+      "colors": 20,
+      "thumb": "gioconda.png",
+      "hash": "f414f46fb5"
+    },
+    {
+      "id": "noche-estrellada",
+      "name": "La noche estrellada",
+      "width": 64,
+      "height": 64,
+      "colors": 20,
+      "thumb": "noche-estrellada.png",
+      "hash": "93d7089589"
+    },
+    {
+      "id": "nacimiento-de-venus",
+      "name": "El nacimiento de Venus",
+      "width": 64,
+      "height": 64,
+      "colors": 20,
+      "thumb": "nacimiento-de-venus.png",
+      "hash": "d5ad256bc1"
+    },
+    {
+      "id": "libertad",
+      "name": "La Libertad guiando al pueblo",
+      "width": 64,
+      "height": 64,
+      "colors": 20,
+      "thumb": "libertad.png",
+      "hash": "dbc934412e"
+    },
+    {
+      "id": "creacion-de-adan",
+      "name": "La creación de Adán",
+      "width": 64,
+      "height": 64,
+      "colors": 18,
+      "thumb": "creacion-de-adan.png",
+      "hash": "8e098223ef"
     }
   ]
 }
