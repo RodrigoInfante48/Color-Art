@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "levels": [
+    {
+      "id": "corazon",
+      "name": "Corazón",
+      "width": 32,
+      "height": 32,
+      "colors": 5,
+      "thumb": "corazon.png",
+      "hash": "f42c6d0e82",
+      "unlocked": true
+    },
+    {
+      "id": "pez",
+      "name": "Pez payaso",
+      "width": 48,
+      "height": 48,
+      "colors": 10,
+      "thumb": "pez.png",
+      "hash": "cc486f521c"
+    },
+    {
+      "id": "atardecer",
+      "name": "Atardecer en la montaña",
+      "width": 56,
+      "height": 56,
+      "colors": 9,
+      "thumb": "atardecer.png",
+      "hash": "a2b5747ca7"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#7c5cff">
+  <meta name="description" content="Colorea por números desde el celular.">
+  <title>Color Art</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <!-- Catálogo -->
+  <section id="screen-catalog" class="screen" aria-labelledby="catalog-title">
+    <header class="catalog-header">
+      <h1 class="brand"><span class="brand-dot" aria-hidden="true"></span><span data-i18n="app.title">Color Art</span></h1>
+      <p class="brand-sub" data-i18n="app.subtitle"></p>
+    </header>
+    <h2 id="catalog-title" class="section-title" data-i18n="catalog.heading"></h2>
+    <p id="catalog-status" class="status" role="status"></p>
+    <div id="catalog-grid" class="catalog-grid"></div>
+  </section>
+
+  <!-- Juego -->
+  <section id="screen-game" class="screen" hidden>
+    <header class="game-bar">
+      <button id="btn-back" class="icon-btn" type="button" data-i18n-aria="game.back" data-i18n-title="game.back">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <div class="game-title">
+        <span id="game-name" class="game-name"></span>
+        <span class="game-progress"><span id="game-progress-bar" class="game-progress-bar"></span></span>
+      </div>
+      <button id="btn-pan" class="icon-btn" type="button" aria-pressed="false" data-i18n-aria="game.panLabel" data-i18n-title="game.pan">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18M12 3l-3 3M12 3l3 3M12 21l-3-3M12 21l3-3M3 12l3-3M3 12l3 3M21 12l-3-3M21 12l-3 3"/></svg>
+      </button>
+      <button id="btn-fit" class="icon-btn" type="button" data-i18n-aria="game.fit" data-i18n-title="game.fit">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+      </button>
+      <button id="btn-hint" class="icon-btn" type="button" data-i18n-aria="game.hintLabel" data-i18n-title="game.hint">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></svg>
+      </button>
+    </header>
+    <div class="stage">
+      <canvas id="board" class="board" data-i18n-aria="game.canvasLabel" role="img"></canvas>
+      <p id="game-status" class="status status-overlay" role="status"></p>
+    </div>
+    <nav id="palette" class="palette"></nav>
+  </section>
+
+  <!-- Nivel completado -->
+  <div id="finish" class="finish" role="dialog" aria-modal="true" aria-labelledby="finish-title" hidden>
+    <div class="finish-card">
+      <h2 id="finish-title" data-i18n="finish.title"></h2>
+      <p class="finish-sub" data-i18n="finish.subtitle"></p>
+      <div class="finish-frame"><canvas id="finish-canvas"></canvas></div>
+      <div class="finish-actions">
+        <button id="btn-download" class="btn btn-primary" type="button" data-i18n="finish.download"></button>
+        <button id="btn-more" class="btn" type="button" data-i18n="finish.catalog"></button>
+        <button id="btn-replay" class="btn btn-ghost" type="button" data-i18n="finish.replay"></button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript>Este juego necesita JavaScript.</noscript>
+</body>
+</html>
